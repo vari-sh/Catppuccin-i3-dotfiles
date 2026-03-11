@@ -1,6 +1,6 @@
 configuration {
     modi: "run,drun,window";
-    icon-theme: "Tela-dracula-dark"; /* Make sure this folder name is exact */
+    icon-theme: "Tela-dracula-dark";
     show-icons: true;
     terminal: "kitty";
     drun-display-format: "{icon} {name}";
@@ -83,6 +83,7 @@ listview {
     columns: 2;
     lines: 5;
     background-color: @bg-col;
+    scrollbar: false;
 }
 
 element {
@@ -101,7 +102,7 @@ element-text {
     background-color: transparent;
 }
 
-/* --- STATE MANAGEMENT (Fixes the yellow background) --- */
+/* --- STATE MANAGEMENT --- */
 
 /* Normal Rows */
 element normal.normal {
@@ -117,7 +118,7 @@ element selected.normal {
     text-color: @mauve;
 }
 
-/* Active Rows (Open Windows - previously yellow) */
+/* Active Rows */
 element normal.active {
     background-color: @bg-col;
     text-color: @mauve;
