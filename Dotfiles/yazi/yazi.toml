@@ -1,0 +1,32 @@
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true, desc = "Edit" }
+]
+
+[open]
+prepend_rules = [
+    { name = "*.json", use = "edit" },
+    { name = "*.sh", use = "edit" },
+    { name = "*.toml", use = "edit" },
+    { name = "*.y*ml", use = "edit" },
+    { name = "*config", use = "edit" },
+    { name = "*.cfg", use = "edit" },
+    { name = "*env", use = "edit" },
+    { name = "*.d", use = "edit" },
+    { name = "*.md", use = "edit" },
+    { name = "*.txt", use = "edit" },
+    { name = ".zsh*", use = "edit" },
+    { name = "*.ini", use = "edit" },
+    { name = "*.lua", use = "edit" },
+    { name = "*.xml", use = "edit" },
+    { name = "*.log", use = "edit" },
+# open with normal / gnome / kde
+    { name = "*.ods", use = "open" },
+    { name = "*.pdf", use = "open" },
+# open with multimedia player
+    { name = "*.mp3", use = "play" },
+
+]
+append_rules = [
+    { name = "*", use = "edit" },
+]

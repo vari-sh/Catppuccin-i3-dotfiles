@@ -1,0 +1,41 @@
+[global]
+    ### Impostazioni Generali ###
+    follow = mouse
+    
+    # FIX HEIGHT: (minima, massima)
+    width = 300
+    height = (0, 100)
+    
+    origin = top-right
+    
+    # FIX OFFSET: (orizzontale, verticale)
+    offset = (10, 50)
+    
+    ### Stile Bordi e Font ###
+    frame_width = 2
+    font = JetBrainsMono Nerd Font 10
+    corner_radius = 10
+    
+    ### Colori Catppuccin ###
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#cba6f7"
+    separator_color = "frame"
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#89b4fa"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#cba6f7"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    frame_color = "#f38ba8"
+    timeout = 0
