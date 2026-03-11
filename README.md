@@ -63,7 +63,7 @@ The entire system follows the **Catppuccin Mocha** color scheme. You can find mo
 ## 💡 Configuration Highlights
 
 ### Fonts
-* **Interface:** Inter / Noto Sans
+* **Interface:** Inter
 * **Terminal/UI Icons:** JetBrainsMono Nerd Font
 
 ---
