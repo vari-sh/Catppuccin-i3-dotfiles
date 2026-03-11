@@ -7,15 +7,15 @@ A minimal and aesthetic configuration for **Arch Linux**, featuring **i3wm** and
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="Screenshots/screenshot_1.png" width="500"/>
+  <img src="Screenshots/screenshot_1.png"/>
 </p>
 
 <p align="center">
-  <img src="Screenshots/screenshot_2.png" width="500"/>
+  <img src="Screenshots/screenshot_2.png"/>
 </p>
 
 <p align="center">
-  <img src="Screenshots/screenshot_3.png" width="500"/>
+  <img src="Screenshots/screenshot_3.png"/>
 </p>
 
 ---
