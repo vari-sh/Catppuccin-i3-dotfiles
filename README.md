@@ -67,3 +67,10 @@ The entire system follows the **Catppuccin Mocha** color scheme. You can find mo
 * **Terminal/UI Icons:** JetBrainsMono Nerd Font
 
 ---
+
+## 📜 Credits
+
+* **Polybar Inspiration:** [owl_dots by prolinux410](https://gitlab.com/prolinux410/owl_dots/-/tree/main/i3wm/i3_catppuccin)
+* **Wallpaper:** [walls-catppuccin-mocha by orangci](https://github.com/orangci/walls-catppuccin-mocha)
+
+---
