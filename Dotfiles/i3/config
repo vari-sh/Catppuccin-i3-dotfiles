@@ -40,11 +40,11 @@ set $mantle #181825
 set $crust #11111b
 
 # Theming
-# target                 title     bg    text   indicator  border
-client.focused           $base     $base $mauve $base      $mauve
-client.focused_inactive  $base     $base $mauve $base      $base
-client.unfocused         $base     $base $text  $base      $base
-client.urgent            $base     $base $peach $peach     $peach
+# target                 border   bg      text   indicator  child_border
+client.focused           $base    $base   $mauve $base      $mauve
+client.focused_inactive  $base    $base   $mauve $base      $base
+client.unfocused         $base    $mantle $text  $base      $base
+client.urgent            $base    $base   $peach $peach     $peach
 client.background        $base
 
 # Copy and Paste
@@ -90,17 +90,25 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id dunst
 
 # Lockscreen
-bindsym $mod+x exec betterlockscreen -l blur
+# bindsym $mod+x exec betterlockscreen -l blur
+bindsym $mod+x exec ~/.config/i3/Scripts/lock.sh
 
 # Clipboard
 exec --no-startup-id greenclip daemon>/dev/null 2>&1
 bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme ~/.config/rofi/config.rasi
 
+# betterlockscreen
+exec_always --no-startup-id betterlockscreen -u ~/Pictures/walls-catppuccin-mocha/tree.jpg
+
 # dbus
 exec --no-startup-id dbus-update-activation-environment --all
+# exec --no-startup-id dbus-update-activation-environment --systemd DISPLAY XAUTHORITY I3SOCK
 
 # Screenshot
 bindsym $mod+shift+S exec flameshot gui
+
+# xsettingsd
+exec --no-startup-id xsettingsd
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -147,8 +155,9 @@ tiling_drag modifier titlebar
 # bindsym $mod+Return exec i3-sensible-terminal
 # bindsym $mod+Return exec konsole
 # bindsym $mod+Return exec env LIBGL_ALWAYS_SOFTWARE=1 kitty
-# bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec kitty
+# bindsym $mod+Return exec xfce4-terminal
+# bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
